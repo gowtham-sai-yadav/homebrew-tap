@@ -5,21 +5,21 @@
 class ClaudeTeleport < Formula
   desc "Move your Claude Code history between machines, with paths fixed automatically"
   homepage "https://github.com/gowtham-sai-yadav/claude-teleport"
-  version "0.5.3"
+  version "0.5.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gowtham-sai-yadav/claude-teleport/releases/download/v0.5.3/claude-teleport-darwin-amd64"
-      sha256 "4efae8e38d39f7326a20e676979dc818c01e27aabc6386997be4982632004777"
+      url "https://github.com/gowtham-sai-yadav/claude-teleport/releases/download/v0.5.4/claude-teleport-darwin-amd64"
+      sha256 "c0eeb86e9afda84d72e44f68d64dbaee7e01c0ae355f94416a8aa260dc7cf5ae"
 
       define_method(:install) do
         bin.install "claude-teleport-darwin-amd64" => "claude-teleport"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gowtham-sai-yadav/claude-teleport/releases/download/v0.5.3/claude-teleport-darwin-arm64"
-      sha256 "8b007a344c62f4081463699628135f53579c2ad20cae9960e63ec81e13abd9fc"
+      url "https://github.com/gowtham-sai-yadav/claude-teleport/releases/download/v0.5.4/claude-teleport-darwin-arm64"
+      sha256 "37ab783d094e1123db34d19e8f2f69cdf62638a0e2b79860025c191fea3c84c6"
 
       define_method(:install) do
         bin.install "claude-teleport-darwin-arm64" => "claude-teleport"
@@ -29,15 +29,15 @@ class ClaudeTeleport < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gowtham-sai-yadav/claude-teleport/releases/download/v0.5.3/claude-teleport-linux-amd64"
-      sha256 "0c1a15ef043905b84c38393a486f067b227e9483659ebe1e3370e2037a6185a8"
+      url "https://github.com/gowtham-sai-yadav/claude-teleport/releases/download/v0.5.4/claude-teleport-linux-amd64"
+      sha256 "f67b9063a7c4c856c08e01a0bd819a9b76b7fcfe59572a4a2029950bdfdb30c6"
       define_method(:install) do
         bin.install "claude-teleport-linux-amd64" => "claude-teleport"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gowtham-sai-yadav/claude-teleport/releases/download/v0.5.3/claude-teleport-linux-arm64"
-      sha256 "0c8f7d9e24c5df5d8031dbb43ff2202eaa8cddb7e0ce2b455ee686a7a9401861"
+      url "https://github.com/gowtham-sai-yadav/claude-teleport/releases/download/v0.5.4/claude-teleport-linux-arm64"
+      sha256 "af7bb3b58cbb14f44b45ff5da96202a353405c9abbbdd5c96fa4a84d390e2732"
       define_method(:install) do
         bin.install "claude-teleport-linux-arm64" => "claude-teleport"
       end
