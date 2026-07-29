@@ -5,21 +5,21 @@
 class Entangle < Formula
   desc "Hand a live coding session to anyone - Claude Code, Codex, or opencode"
   homepage "https://github.com/gowtham-sai-yadav/entangle"
-  version "0.6.1"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gowtham-sai-yadav/entangle/releases/download/v0.6.1/entangle-darwin-amd64"
-      sha256 "e4210458ee810036f99f231b5c05962b68a769b7a59d6b19117b46f7f745efef"
+      url "https://github.com/gowtham-sai-yadav/entangle/releases/download/v0.7.0/entangle-darwin-amd64"
+      sha256 "6e2cedef3d023917cb311faf148f775311804d80f940ead44944dde5b574cf59"
 
       define_method(:install) do
         bin.install "entangle-darwin-amd64" => "entangle"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gowtham-sai-yadav/entangle/releases/download/v0.6.1/entangle-darwin-arm64"
-      sha256 "6c4c1b9127abc1bb37e449abd9e5e1b5ec300ef209a0b85ee69010662339f1a6"
+      url "https://github.com/gowtham-sai-yadav/entangle/releases/download/v0.7.0/entangle-darwin-arm64"
+      sha256 "29d652d68fb9881d6379c04b6522ef87d33812a463c8fa063614fb4d9f9b64a3"
 
       define_method(:install) do
         bin.install "entangle-darwin-arm64" => "entangle"
@@ -29,15 +29,15 @@ class Entangle < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gowtham-sai-yadav/entangle/releases/download/v0.6.1/entangle-linux-amd64"
-      sha256 "d645c13ac1366941c083d68760a52726139694dad93f1fc7029464c0a242f72b"
+      url "https://github.com/gowtham-sai-yadav/entangle/releases/download/v0.7.0/entangle-linux-amd64"
+      sha256 "2104196d64ca334116196f4a6a3008676aa69cb34ea7724bbf9b41f41ba8afbb"
       define_method(:install) do
         bin.install "entangle-linux-amd64" => "entangle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gowtham-sai-yadav/entangle/releases/download/v0.6.1/entangle-linux-arm64"
-      sha256 "bd865c4080ee22a17335e131481b21b5376405e1537051b95c952a3dbbc954bb"
+      url "https://github.com/gowtham-sai-yadav/entangle/releases/download/v0.7.0/entangle-linux-arm64"
+      sha256 "534dcd9e7106a848c69fd6f6a3a0ef8a29e10328229fb49565786fada899d2bf"
       define_method(:install) do
         bin.install "entangle-linux-arm64" => "entangle"
       end
